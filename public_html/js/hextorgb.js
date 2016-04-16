@@ -11,5 +11,8 @@ function rgbinterface(){
     R = Number(document.getElementById("R").value);
     G = Number(document.getElementById("G").value);
     B = Number(document.getElementById("B").value);
-    document.write(rgbToHex(R,G,B));  
+    $("#rgbtohex").html(rgbToHex(R,G,B));
 }
+
+
+
