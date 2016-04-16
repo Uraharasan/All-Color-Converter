@@ -18,12 +18,7 @@ and open the template in the editor.
             <input type="number" name="B" id="B">
             <input type="button" id="btn" value="Перевод цены">
             <script>
-                function submitinterface(){
-                document.write(rgbToHex(document.getElementById("R").value, 
-                document.getElementById("G").value,
-                document.getElementById("B").value));
-            }
-            document.getElementById("btn").onclick = submitinterface;
+            document.getElementById("btn").onclick = rgbinterface;
             </script>
             
         </div>
