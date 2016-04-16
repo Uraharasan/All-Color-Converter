@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/jquery-1.12.3.min.js"></script>
         <script src="./js/hextorgb.js" ></script>
     </head>
     <body>
@@ -16,11 +17,12 @@ and open the template in the editor.
             <input type="number" name="R" id="R">
             <input type="number" name="G" id="G">
             <input type="number" name="B" id="B">
-            <input type="button" id="btn" value="Перевод цены">
+            <button id="btn">Перевод цены</button>
             <script>
             document.getElementById("btn").onclick = rgbinterface;
             </script>
-            
+            <div id="rgbtohex">
+            </div>
         </div>
     </body>
 </html>
