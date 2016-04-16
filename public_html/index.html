@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/hextorgb.js" ></script>
+    </head>
+    <body>
+        <div>
+            <input type="number" name="R" id="R">
+            <input type="number" name="G" id="G">
+            <input type="number" name="B" id="B">
+            <input type="button" id="btn" value="Перевод цены">
+            <script>
+                function submitinterface(){
+                document.write(rgbToHex(document.getElementById("R").value, 
+                document.getElementById("G").value,
+                document.getElementById("B").value));
+            }
+            document.getElementById("btn").onclick = submitinterface;
+            </script>
+            
+        </div>
+    </body>
+</html>
