@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Color Converter</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./js/jquery-1.12.3.min.js"></script>
@@ -14,14 +14,26 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <input type="number" name="R" id="R">
-            <input type="number" name="G" id="G">
-            <input type="number" name="B" id="B">
-            <button id="btn">Перевод цены</button>
-            <script>
-            document.getElementById("btn").onclick = rgbinterface;
-            </script>
+            <h1>Color Convertor</h1>
+            <div>
+                <h2>RGB to xex</h2>
+                <input type="number" name="R" id="R" value="0">
+                <input type="number" name="G" id="G" value="0">
+                <input type="number" name="B" id="B" value="0">
+                <button id="btn1">Перевод</button>
+            </div>
             <div id="rgbtohex">
+            </div>
+            <div>
+                <h2>Hex to RGB</h2>
+                <input type="text" name="hex" id="hex" value="ffffff"> 
+                <button id="btn2">Перевод</button>
+            </div>
+            <script>
+            document.getElementById("btn1").onclick = rgbinterface;
+            document.getElementById("btn2").onclick = hextorgbinterface;
+            </script>
+            <div id="hextorgb">
             </div>
         </div>
     </body>
